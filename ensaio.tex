@@ -1,0 +1,145 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thin Sectioned Essay
+% LaTeX Template
+% Version 1.0 (3/8/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original Author:
+% Nicolas Diaz (nsdiaz@uc.cl) with extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage{hyperref}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage{tocloft}
+
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+\usepackage{etoolbox}
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+\pretocmd{\chapter}{\addtocontents{toc}{\protect\addvspace{5\p@}}}{}{}
+\pretocmd{\section}{\addtocontents{toc}{\protect\vspace{-4mm}}}{}{}
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{50pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\\@date % Date
+
+\vspace{40pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%   TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{The scientific style}} % Subtitle
+
+\author{\textsc{Renato Fabbri} % Author
+\\{\textit{IFSC/USP, Participa.br/SG-PR, labMacambira.sf.net}}} % Institution
+
+\date{\today} % Date
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+%----------------------------------------------------------------------------------------
+%   ABSTRACT AND KEYWORDS
+%----------------------------------------------------------------------------------------
+
+%\renewcommand{\abstractname}{Summary} % Uncomment to change the name of the abstract to something else
+
+
+{
+\begin{abstract}
+The use of digital traces of our social structures and activities is a reality for some companies and State instances. The exploitation by the individual and by Society is still incipient. This writing is a brief account of an immersion to advance this civil empowerment, beginning with experiments for collection and dissemination of information, and going through social structures streaming, resource recommendation via complex networks and natural language processing, linked data and ontological organizations of social and participatory structures.
+\end{abstract}
+}
+
+
+
+\hspace*{3,6mm}\textit{Keywords:} scientific writing, , , , % Keywords
+
+%\vspace{30pt} % Some vertical space between the abstract and first section
+
+%----------------------------------------------------------------------------------------
+%   ESSAY BODY
+%----------------------------------------------------------------------------------------
+\newpage
+\tableofcontents
+
+
+\section*{Canon}
+\addcontentsline{toc}{section}{Canon}
+Abstract, Introduction, materials and methods, Results, Conclusions and Future work.
+
+Choose 1, 2 other paradigms, probably from~\cite{livro}. Show some variations.
+
+\subsection*{Mini-example}
+\addcontentsline{toc}{subsection}{Mini-example}
+Use only one phrase for each section. 2-3 examples using 2-3 templates (as exposed in canon).
+
+\subsection*{Minimum necessary for an article}
+\addcontentsline{toc}{subsection}{Minimum necessary for an article}
+
+\subsection*{Possible and reasonable maximums}
+\addcontentsline{toc}{subsection}{Possible and reasonable Maximums}
+
+\section*{Scientific art}
+\addcontentsline{toc}{section}{Scientific art}
+
+\subsection*{Scientific style in literature and other forms of expression}
+\addcontentsline{toc}{subsection}{Scientific style in literature and other forms of expression}
+Style influence generating hybrids: scientific structure but content from propaganda, news, Machado de Assis, etc.
+
+Exhibit audiovisual work already accomplished~\cite{preludio,fouHubs}. Explore other cases.
+
+\subsection*{Examples}
+\addcontentsline{toc}{subsection}{Examples}
+Two examples with scientific structure but other content, two examples with freedom on structure use (e.g. put sections into verses of a poem).
+
+\subsection*{Automated examples}
+\addcontentsline{toc}{subsection}{Automated examples}
+
+\section*{Conclusions}
+\addcontentsline{toc}{section}{Conclusions}
+Proposition of a minimalist style for writing, in consonance with sing only one phase (or verse) for each section or subpart. Scientific Haikai~\cite{haikai}? Use of scientific art for education and for art itself.
+
+----------------------------------------------------------------------------------------
+%   BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+%\bibliographystyle{unsrt}
+\bibliographystyle{plain}
+\bibliography{ensaio}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
